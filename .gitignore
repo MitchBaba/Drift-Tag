@@ -1,0 +1,11 @@
+__pycache__/
+*.pyc
+*.log
+.env
+.venv/
+venv/
+output_v15/
+progress_v184/
+*.zip
+.DS_Store
+desktop.ini
