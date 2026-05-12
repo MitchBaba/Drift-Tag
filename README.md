@@ -2,9 +2,11 @@
 
 **Structured behavioral labeling for replay-faithful AI conversation logs.**
 
-DriftTag is a local pipeline for converting multi-turn AI conversation transcripts into structured JSONL records for behavioral analysis, trust-curve modeling, dataset preparation, and downstream evaluation workflows.
+DriftTag is a private/local pipeline for converting multi-turn AI conversation transcripts into structured JSONL records for behavioral analysis, trust-curve modeling, dataset preparation, and downstream evaluation workflows.
 
 It is designed for researchers, red-teamers, evaluators, and AI product teams who need to turn messy conversational logs into reviewable, replay-aware behavioral data.
+
+This repository currently documents and maintains the DriftTag system. It does not imply a public open-source release of the core implementation.
 
 ---
 
@@ -54,6 +56,15 @@ It is built around the principle that multi-turn behavior should be analyzed fro
 ## Current Pipeline
 
 DriftTag currently uses a layered processing pipeline.
+
+```text
+transcript input
+  → Pass 0 spine extraction, audit, and quarantine
+  → Pass 1 strict single-turn tagging
+  → Pass 2 conservative refinement
+  → Pass 3 deterministic trust derivation
+  → structured JSONL + reports
+```
 
 ### Pass 0 — Spine Extraction, Audit, and Quarantine
 
@@ -207,6 +218,7 @@ DriftTag is not:
 - a replacement for human review
 - a guarantee of semantic correctness
 - a compliance or certification system
+- a public self-service product at this stage
 
 The outputs should be treated as structured signals for review, filtering, and analysis.
 
@@ -239,19 +251,17 @@ Inputs without recognizable turn markers or usable role/turn structure may be qu
 
 ## Output Structure
 
-Primary outputs are written under `output_v15/`.
+DriftTag produces structured artifacts for review and downstream analysis.
 
-Typical output folders include:
+Typical output categories include:
 
-```text
-output_v15/pass0_spine_v18/
-output_v15/pass0_audits_v18/
-output_v15/pass1_tagged_v18/
-output_v15/pass2_refined_v184/
-output_v15/pass3_reports_v18/
-output_v15/quarantine_v18/
-output_v15/progress_v184/
-```
+- spine records
+- audit records
+- strict tagging records
+- refined records
+- trust-curve records
+- quarantine records
+- progress markers
 
 Pass 3 outputs are emitted as JSONL records suitable for review and downstream processing.
 
@@ -259,38 +269,59 @@ Pass 3 outputs are emitted as JSONL records suitable for review and downstream p
 
 ## Local Model Backend
 
-DriftTag currently uses a local Ollama/Mistral backend for tagging and refinement.
+DriftTag currently uses a local model backend for tagging and refinement.
 
-Typical model:
-
-```text
-mistral:latest
-```
+The current internal development setup uses Ollama with Mistral.
 
 Pass 3 trust derivation is deterministic and does not require a model call.
 
+Backend details may change as the system evolves.
+
 ---
 
-## Example Run
+## Access Model
 
-Process one file:
+DriftTag is currently maintained as a private/internal research and service tool.
 
-```bash
-python3 run_drifttag.py --file input/example_thread.txt --passes 0,1,2,3
-```
+The codebase is not currently published as an open-source package. Public materials may include methodology notes, sample outputs, pilot reports, schema examples, and selected documentation, but the core implementation remains private unless explicitly released later.
 
-Run selected passes:
+Current access model:
 
-```bash
-python3 run_drifttag.py --file input/example_thread.txt --passes 0
-python3 run_drifttag.py --file input/example_thread.txt --passes 1,2,3
-```
+- private repository
+- supervised internal runs
+- controlled service pilots
+- selected sample outputs for demonstration
+- no public self-service release yet
+
+---
+
+## Service Model
+
+DriftTag can be used as a supervised processing service for teams or researchers with replay-faithful conversational logs.
+
+A typical service workflow:
+
+1. The team provides authorized conversational logs.
+2. Logs are checked for replay-fidelity requirements.
+3. DriftTag processes the transcripts through the available pipeline.
+4. Outputs are reviewed for validity and obvious failure modes.
+5. The team receives structured JSONL, summary statistics, and optional analysis notes.
+
+Possible deliverables:
+
+- structured JSONL records
+- pass-level audit summaries
+- quarantine reports
+- trust-curve outputs
+- inflection summaries
+- dataset-quality notes
+- optional written findings memo
 
 ---
 
 ## Current Status
 
-DriftTag is an active research and tooling project.
+DriftTag is an active private research and tooling project.
 
 Current strengths:
 
@@ -308,6 +339,11 @@ Current limitations:
 - local model output quality depends on the configured model backend
 - current transcript parser expects exact markers
 - Pass 4 behavioral posture modeling is planned but not yet implemented
+- outputs should be reviewed before being used for training, reporting, or decision-making
+
+The current system is suitable for experimentation, dataset preparation, internal evaluation workflows, and supervised service pilots.
+
+It should not yet be treated as a fully automated production safety system.
 
 ---
 
@@ -361,40 +397,34 @@ DriftTag is part of a larger research stack.
 - **Overseer** analyzes replay-faithful interaction records for post-hoc replay analysis and future inline observability.
 - **DriftBrain** is a planned future state-modeling layer.
 
-DriftTag can also be used independently as a transcript preprocessing and behavioral labeling tool.
+DriftTag can also be used independently as a transcript preprocessing and behavioral labeling system.
 
 ---
 
 ## Safety and Ethics
 
-DriftTag is intended for defensive, research, and evaluation workflows.
+DriftTag is built for defensive, research, and evaluation workflows.
+
+The project is based on a simple principle: conversational AI behavior should be analyzed with preserved context, clear provenance, and human review. DriftTag is intended to help teams understand interaction patterns, improve evaluation quality, and prepare better datasets — not to automate enforcement decisions or make unsupported claims about users, models, or organizations.
+
+DriftTag outputs should be treated as structured signals that support review, not as final judgments.
 
 Recommended use:
 
-- analyze logs you are authorized to process
-- preserve replay-faithful records
-- use outputs as review signals, not final judgments
-- avoid using labels as automated enforcement decisions
-- review outputs before using them for training or reporting
+- process only logs you are authorized to analyze
+- preserve replay-faithful records wherever possible
+- review outputs before using them for training, reporting, or decision-making
+- handle private, sensitive, or regulated data with appropriate permission and safeguards
+- avoid using labels as automated enforcement or compliance decisions
 
 ---
 
-## License
+## Repository Status
 
-License to be selected.
+This repository is currently private while DriftTag is being organized, documented, and prepared for possible public release.
 
-Recommended options:
+The repository is used to maintain DriftTag’s implementation, documentation, pilot results, and roadmap. Public release scope will be decided after cleanup, validation, and packaging.
 
-- MIT for open tooling
-- Apache-2.0 for broader commercial clarity
-- CC BY-NC for documentation/data examples if commercial reuse should be restricted
+Future public materials may include selected code, methodology notes, schema examples, sample outputs, pilot reports, normalizers, or packaged tooling, depending on what is appropriate to release.
 
----
-
-## Project Status
-
-Early public release.
-
-DriftTag is functional and actively evolving. The current release is suitable for experimentation, dataset preparation, internal evaluation workflows, and supervised service pilots.
-
-It should not yet be treated as a fully automated production safety system.
+Until then, DriftTag should be treated as an active private research and tooling project rather than a finished public release.
