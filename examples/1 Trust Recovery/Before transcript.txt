@@ -49,7 +49,7 @@ You said:
 I'll need to go between the swimming pool and the restaurant.
 
 ChatGPT said:
-Booking was successful. The car will be a white Toyota and the contact number is 07225283033. Is there anything else I can help you with?
+Booking was successful. The car will be a white Toyota and the contact number is [phone number]. Is there anything else I can help you with?
 
 You said:
 No, thank you. That was all I needed. Thanks. Bye.
