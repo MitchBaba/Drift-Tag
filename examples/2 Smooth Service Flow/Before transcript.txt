@@ -1,0 +1,70 @@
+# SOURCE_DATASET: MultiWOZ
+# SOURCE_FILE: dialogues_006.json
+# DIALOGUE_ID: MUL0720.json
+# SERVICES: train, hotel
+
+You said:
+Can you help me find a place to stay? I am looking for a hotel with a star of 0 and it needs free wifi.
+
+ChatGPT said:
+There are 3 hotels that meet that criteria. Would city centre north b and b work for you?
+
+You said:
+Yes. Does it have free wifi?
+
+ChatGPT said:
+Yes, they offer free wifi. Would you like me to make a reservation for you?
+
+You said:
+Is that a guesthouse in the north? If so, I need to book it for 5 people 3 nights starting Tuesday, and I'll need a reference number.
+
+ChatGPT said:
+There is one guesthouse called City Centre North B and B, your reservation is all booked, your reference number is 7QYC93WT .
+
+You said:
+Thank you. I would also like to check the train schedule for Friday.
+
+ChatGPT said:
+Sure. Where will you be departing from and arriving at?
+
+You said:
+I'll be leaving from Cambridge and going to Norwich on Friday.
+
+ChatGPT said:
+Trains from Cambridge to Norwich leave 36 minutes after the hour, every hour. The duration is 79 minutes, and the price is 17.6GBP. Would you like to book a ticket?
+
+You said:
+Can I get the train ID for the one you mentioned please?
+
+ChatGPT said:
+I'm apologize but before I can provide a train number I need to know what time you would like to depart.
+
+You said:
+Any time after 20:45 is just fine with me. I'll just need the train ID - no booking today.
+
+ChatGPT said:
+TR0625 departs friday from cambridge at 21:36. Do you need any other information?
+
+You said:
+Could you tell me the price of the train please?
+
+ChatGPT said:
+Yes, the cost is 17.60 pounds. Do you want to book it?
+
+You said:
+Could you please tell me the travel time for that?
+
+ChatGPT said:
+Of course, the travel time is roughly 79 minutes.
+
+You said:
+Ok, that's good. I would like to book that train please
+
+ChatGPT said:
+OK, how many tickets do you need?
+
+You said:
+I don't need a ticket. I just needed to know. That'll be everything!
+
+ChatGPT said:
+Thank you, goodbye.

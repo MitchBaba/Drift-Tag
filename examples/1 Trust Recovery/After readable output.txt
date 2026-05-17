@@ -1,0 +1,20 @@
+turn | role      | trust_delta | trust_curve | inflection | strategy | emotion
+-----|-----------|-------------|-------------|------------|----------|--------
+   0 | user      | 0.00        | 0.00        | none       | information_retrieval | location
+   1 | assistant | 0.00        | 0.00        | none       | information_provision | location_query
+   2 | user      | 0.00        | 0.00        | none       | suggestion with correct information | neutral
+   3 | assistant | 0.00        | 0.00        | none       | information provision | neutral
+   4 | user      | 0.10        | 0.10        | none       | understanding_intent | intent
+   5 | assistant | 0.00        | 0.10        | none       | information_provision | location_identification
+   6 | user      | 0.10        | 0.20        | none       | understood_request | neutral
+   7 | assistant | 0.00        | 0.20        | none       | commitment | confidence
+   8 | user      | -0.25       | -0.05       | observed   | response to user complaint about delayed action | neutral
+   9 | assistant | 0.00        | -0.05       | confirmed  | apology | neutral
+  10 | user      | 0.10        | 0.05        | none       | understanding user request | request_type
+  11 | assistant | 0.00        | 0.05        | none       | information_request | role
+  12 | user      | 0.10        | 0.15        | observed   | understanding_request | request_type
+  13 | assistant | 0.00        | 0.15        | confirmed  | informative_response | assistant_role
+  14 | user      | 0.00        | 0.15        | none       | route_planning | location
+  15 | assistant | 0.00        | 0.15        | none       | response | routine_assistance
+  16 | user      | 0.10        | 0.25        | none       | user_terminates_conversation | neutral
+  17 | assistant | 0.00        | 0.25        | none       | informative | routine

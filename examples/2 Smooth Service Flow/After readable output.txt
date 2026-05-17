@@ -1,0 +1,24 @@
+turn | role      | trust_delta | trust_curve | inflection | strategy | emotion
+-----|-----------|-------------|-------------|------------|----------|--------
+   0 | user      | 0.00        | 0.00        | none       | understanding user request | request_type
+   1 | assistant | 0.00        | 0.00        | none       | recommendation | hotel_options
+   2 | user      | 0.10        | 0.10        | none       | information_seeking | intent
+   3 | assistant | 0.00        | 0.10        | none       | information_provision | neutral
+   4 | user      | 0.10        | 0.20        | none       | understanding_and_planning | intent
+   5 | assistant | 0.00        | 0.20        | none       | inform_booking | neutral
+   6 | user      | 0.10        | 0.30        | none       | understood_request | intent
+   7 | assistant | 0.00        | 0.30        | none       | providing_information | routine_competence
+   8 | user      | 0.00        | 0.30        | none       | route-planning | neutral
+   9 | assistant | 0.00        | 0.30        | none       | information_provision | neutral
+  10 | user      | 0.10        | 0.40        | none       | information retrieval | intent_certainty
+  11 | assistant | 0.00        | 0.40        | none       | providing information | role
+  12 | user      | 0.10        | 0.50        | none       | understanding user preferences | request_type
+  13 | assistant | 0.00        | 0.50        | none       | information_provision | routine
+  14 | user      | 0.10        | 0.60        | none       | understanding user request | intent
+  15 | assistant | 0.00        | 0.60        | none       | information_provision | neutral
+  16 | user      | 0.10        | 0.70        | none       | understanding user request | intent
+  17 | assistant | 0.00        | 0.70        | none       | time_calculation | neutral
+  18 | user      | 0.10        | 0.80        | none       | understood_request | task
+  19 | assistant | 0.00        | 0.80        | none       | response | neutral
+  20 | user      | 0.20        | 1.00        | none       | understood_request | neutral
+  21 | assistant | 0.00        | 1.00        | none       | courteous closing | politeness

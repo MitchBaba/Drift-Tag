@@ -1,0 +1,58 @@
+# SOURCE_DATASET: MultiWOZ
+# SOURCE_FILE: dialogues_015.json
+# DIALOGUE_ID: PMUL3994.json
+# SERVICES: restaurant, taxi, attraction
+
+You said:
+I'm looking for a swimming pool in town.
+
+ChatGPT said:
+There are four swimming pools in Cambridge. Did you want one in a particular part of town?
+
+You said:
+No, actually it doesn't matter. Can you suggest one and provide me the postcode?
+
+ChatGPT said:
+Yes, the Jesus green outdoor pool get the most consistently positive feedback, their postal code is cb43px, can I help with anything else?
+
+You said:
+I would also like to find a korean restaurant
+
+ChatGPT said:
+little seoul is found in the center of town and is in the expensive price range. could you like a reservation?
+
+You said:
+Yes, a table for 6, please.
+
+ChatGPT said:
+I will reserve that for you now.
+
+You said:
+Hello, are you still there? You said that you would reserve it but never did anything, it has been 55 minutes.
+
+ChatGPT said:
+Oh, I'm sorry about that. Please excuse me. What day would you like for the reservation to be made?
+
+You said:
+That's alright. I need my table to be booked on Sunday.
+
+ChatGPT said:
+I need more information on the time for the booking.
+
+You said:
+We would like 18:45 on sunday for 6 people. I'll need a taxi to go between the two places by the booked time. Please provide contact number and car type.
+
+ChatGPT said:
+Booking was successful. The table will be reserved for 15 minutes. Reference number is : U9WFNBHE . Which direction will you need the taxi for?
+
+You said:
+I'll need to go between the swimming pool and the restaurant.
+
+ChatGPT said:
+Booking was successful. The car will be a white Toyota and the contact number is 07225283033. Is there anything else I can help you with?
+
+You said:
+No, thank you. That was all I needed. Thanks. Bye.
+
+ChatGPT said:
+If you are sure you do not need anything?

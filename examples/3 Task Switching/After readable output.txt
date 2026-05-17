@@ -1,0 +1,24 @@
+turn | role      | trust_delta | trust_curve | inflection | strategy | emotion
+-----|-----------|-------------|-------------|------------|----------|--------
+   0 | user      | 0.00        | 0.00        | none       | information_retrieval | neutral
+   1 | assistant | 0.00        | 0.00        | none       | information_retrieval | routine
+   2 | user      | 0.00        | 0.00        | none       | information_request | neutral
+   3 | assistant | 0.00        | 0.00        | none       | information_provision | routine_task
+   4 | user      | 0.10        | 0.10        | none       | understanding user intent | intent
+   5 | assistant | 0.00        | 0.10        | none       | direct answer | neutral
+   6 | user      | 0.00        | 0.10        | none       | request_sequence_management | intent
+   7 | assistant | 0.00        | 0.10        | none       | information_provision | neutral
+   8 | user      | 0.00        | 0.10        | none       | information_retrieval | neutral
+   9 | assistant | 0.00        | 0.10        | none       | information_provision | assistant_competence
+  10 | user      | 0.10        | 0.20        | none       | understanding user's request | request_type
+  11 | assistant | 0.00        | 0.20        | none       | information_provision | neutral
+  12 | user      | 0.10        | 0.30        | none       | understanding | neutral
+  13 | assistant | 0.00        | 0.30        | none       | direct answer | role
+  14 | user      | 0.00        | 0.30        | none       | information_retrieval | neutral
+  15 | assistant | 0.00        | 0.30        | none       | information_provision | politeness
+  16 | user      | 0.00        | 0.30        | none       | search_recommendation | location
+  17 | assistant | 0.00        | 0.30        | none       | recommendation | recommended_restaurant
+  18 | user      | 0.00        | 0.30        | none       | information retrieval | requested_info
+  19 | assistant | 0.00        | 0.30        | none       | response | routine_helpfulness
+  20 | user      | 0.10        | 0.40        | none       | understood_and_complied | politeness
+  21 | assistant | 0.00        | 0.40        | none       | greeting | intent

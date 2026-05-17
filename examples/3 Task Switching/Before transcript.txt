@@ -1,0 +1,70 @@
+# SOURCE_DATASET: MultiWOZ
+# SOURCE_FILE: dialogues_002.json
+# DIALOGUE_ID: MUL1679.json
+# SERVICES: restaurant, train
+
+You said:
+I need some information. on a train to london liverpool street arriving by 13:00.
+
+ChatGPT said:
+Yes I have 28 entries with that destination arriving at various times Monday thru Sunday
+
+You said:
+I'm leaving on Sunday from Cambridge, is there anything available?
+
+ChatGPT said:
+I have the TR7187 that will arrive at 01:27. Would you like me to book that for you?
+
+You said:
+Yes, please book that for me.
+
+ChatGPT said:
+For how many people?
+
+You said:
+Hold on a moment. Can I first make a restaurant booking?
+
+ChatGPT said:
+Yes, we can do that after we finish with your train booking. How many people do you need tickets for?
+
+You said:
+I don't need to book it yet. What's the departure and travel times for the train?
+
+ChatGPT said:
+TR7187 departs from Cambridge at 23:59 and arrives in London Liverpool Street at 01:27. Do you want me to book that for you or move on to restaurant assistance?
+
+You said:
+I really dislike math, can you just let me know the trip duration if you have it in front of you?
+
+ChatGPT said:
+Sure. The trip is 88 minutes. Would you like to book a seat?
+
+You said:
+Yes, and then lets work on the restaurant.
+
+ChatGPT said:
+How many tickets would you like?
+
+You said:
+I don't want to book the train right now. Could you find me a restaurant in centre that serves swedish food?
+
+ChatGPT said:
+There appear to be none in the area. Any other types of food you are interested in?
+
+You said:
+Is there British food in the centre in the moderate price range?
+
+ChatGPT said:
+There are four restaurants that serve british food. I recommend Cotto for you. Their address is 183 East Road City Centre
+
+You said:
+What's the postcode with that?
+
+ChatGPT said:
+The postcode is cb11bg. Can I help you with anything else?
+
+You said:
+No thank you, that is everything.
+
+ChatGPT said:
+Have a nice day!
