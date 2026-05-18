@@ -421,8 +421,6 @@ Recommended use:
 
 ## Repository Status
 
-This repository is currently private while DriftTag is being organized, documented, and prepared for possible public release.
-
 The repository is used to maintain DriftTag’s implementation, documentation, pilot results, and roadmap. Public release scope will be decided after cleanup, validation, and packaging.
 
 Future public materials may include selected code, methodology notes, schema examples, sample outputs, pilot reports, normalizers, or packaged tooling, depending on what is appropriate to release.
